@@ -1,0 +1,68 @@
+@use '../abstrato/variavel.scss';
+
+.checkbox__botao  {
+
+    display: none;
+
+}
+
+.cabecalho__navegacao__intens__menu__hamburguer {
+
+    display: none;
+    position: fixed;
+    background-color: variavel.$cor-elemento-03;  
+    top: 12%;
+    z-index: 1000;
+    overflow-y: auto; 
+    max-height: 30vh; 
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+
+    .cabecalho__navegacao__intens__menu__hamburguer__intens {
+
+        margin: 0px 0px;
+        color:  variavel.$cor-elemento-ou-texto-01;
+        padding: 2em;
+
+        &:hover {
+            
+            background-color: variavel.$cor-elemento-ou-texto-hover-01;
+            color:  variavel.$cor-elemento-ou-texto-02;
+
+        }
+
+        .cabecalho__navegacao__intens__menu__hamburguer__intens__links {
+       
+            text-decoration: none;
+            text-transform: uppercase;
+            color: variavel.$cor-elemento-ou-texto-01;
+            font-family: variavel.$texto-01;
+            font-weight: 400;
+            font-size: 1em;
+           
+        }
+
+    }
+
+}
+
+
+@media (min-width: 720px) {
+
+    .checkbox__botao:checked ~ .cabecalho__navegacao__intens__menu__hamburguer {
+
+        display: block;
+    
+    }
+
+}
+
+@media (min-width: 1440px) {
+   
+    .cabecalho__navegacao__intens__menu__hamburguer .cabecalho__navegacao__intens__menu__hamburguer__intens .cabecalho__navegacao__intens__menu__hamburguer__intens__links {
+        
+        font-size: 1.2em;
+    
+    }
+
+}
+

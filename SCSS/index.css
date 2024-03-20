@@ -1,13 +1,60 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&=family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+.checkbox__botao {
+  display: none;
+}
+
+.cabecalho__navegacao__intens__menu__hamburguer {
+  display: none;
+  position: fixed;
+  background-color: #dadada;
+  top: 12%;
+  z-index: 1000;
+  overflow-y: auto;
+  max-height: 30vh;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.cabecalho__navegacao__intens__menu__hamburguer .cabecalho__navegacao__intens__menu__hamburguer__intens {
+  margin: 0px 0px;
+  color: #000000;
+  padding: 2em;
+}
+.cabecalho__navegacao__intens__menu__hamburguer .cabecalho__navegacao__intens__menu__hamburguer__intens:hover {
+  background-color: #FFC756;
+  color: #FFFFFF;
+}
+.cabecalho__navegacao__intens__menu__hamburguer .cabecalho__navegacao__intens__menu__hamburguer__intens .cabecalho__navegacao__intens__menu__hamburguer__intens__links {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000000;
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+}
+
+@media (min-width: 720px) {
+  .checkbox__botao:checked ~ .cabecalho__navegacao__intens__menu__hamburguer {
+    display: block;
+  }
+}
+@media (min-width: 1440px) {
+  .cabecalho__navegacao__intens__menu__hamburguer .cabecalho__navegacao__intens__menu__hamburguer__intens .cabecalho__navegacao__intens__menu__hamburguer__intens__links {
+    font-size: 1.2em;
+  }
+}
 .cabecalho {
+  position: fixed;
+  top: 0;
+  z-index: 900;
   background-color: #000000;
   padding: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 5px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .cabecalho__logo {
@@ -15,8 +62,7 @@
 }
 
 .cabecalho__navegacao {
-  display: inline-block;
-  align-items: center;
+  display: flex;
 }
 
 .cabecalho__navegacao__intens {
@@ -42,25 +88,25 @@
   background-color: transparent;
   border-radius: 1em;
   border: 2px solid #FFFFFF;
-  width: 90%;
+  width: 300px;
 }
 
 .cabecalho__caixa__de__pesquisa::-moz-placeholder {
   font-family: "Work Sans", sans-serif;
   font-weight: 400;
   font-size: 1em;
-  background: url("../../Imagens/Imagens__codigo/Ícone__busca.png") no-repeat;
-  background-position: 5%;
-  background-size: 1.7em;
+  background: url("../Imagens/Imagens__codigo/Ícone__busca.png") no-repeat;
+  background-position: 99% 0%;
+  height: 3em;
 }
 
 .cabecalho__caixa__de__pesquisa::placeholder {
   font-family: "Work Sans", sans-serif;
   font-weight: 400;
   font-size: 1em;
-  background: url("../../Imagens/Imagens__codigo/Ícone__busca.png") no-repeat;
-  background-position: 5%;
-  background-size: 1.7em;
+  background: url("../Imagens/Imagens__codigo/Ícone__busca.png") no-repeat;
+  background-position: 99% 0%;
+  height: 3em;
 }
 
 input.cabecalho__caixa__de__pesquisa:focus {
@@ -69,13 +115,48 @@ input.cabecalho__caixa__de__pesquisa:focus {
   color: #FFFFFF;
 }
 
-input.cabecalho__caixa__de__pesquisa::-webkit-search-cancel-button {
-  -webkit-appearance: none;
-  color: yellow;
+@media (min-width: 720px) {
+  .cabecalho {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+  }
+  .cabecalho__navegacao {
+    width: 70%;
+    display: flex;
+    gap: 50px;
+    justify-content: space-around;
+  }
+  .cabecalho__caixa__de__pesquisa {
+    width: 60%;
+  }
 }
-
+@media (min-width: 1440px) {
+  .cabecalho {
+    flex-wrap: nowrap;
+  }
+  .cabecalho__logo {
+    order: 0;
+  }
+  .cabecalho__navegacao {
+    order: 2;
+  }
+  .cabecalho__caixa__de__pesquisa {
+    order: 1;
+    width: 350px;
+  }
+  .cabecalho__navegacao {
+    width: 50%;
+  }
+}
 .continer__seta {
   transform: rotate(180deg);
+  margin: 0px 5px 5px 5px;
+}
+
+.checkbox__botao:checked + .cabecalho__navegacao__intens__icones .continer__seta {
+  transform: rotate(360deg);
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 

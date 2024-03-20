@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&=family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+.checkbox__botao {
+  display: none;
+}
+
+.cabecalho__navegacao__intens__menu__hamburguer {
+  display: none;
+  position: fixed;
+  background-color: #dadada;
+  top: 12%;
+  z-index: 1000;
+  overflow-y: auto;
+  max-height: 30vh;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.cabecalho__navegacao__intens__menu__hamburguer .cabecalho__navegacao__intens__menu__hamburguer__intens {
+  margin: 0px 0px;
+  color: #000000;
+  padding: 2em;
+}
+.cabecalho__navegacao__intens__menu__hamburguer .cabecalho__navegacao__intens__menu__hamburguer__intens:hover {
+  background-color: #FFC756;
+  color: #FFFFFF;
+}
+.cabecalho__navegacao__intens__menu__hamburguer .cabecalho__navegacao__intens__menu__hamburguer__intens .cabecalho__navegacao__intens__menu__hamburguer__intens__links {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000000;
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+}
+
+@media (min-width: 720px) {
+  .checkbox__botao:checked ~ .cabecalho__navegacao__intens__menu__hamburguer {
+    display: block;
+  }
+}
+@media (min-width: 1440px) {
+  .cabecalho__navegacao__intens__menu__hamburguer .cabecalho__navegacao__intens__menu__hamburguer__intens .cabecalho__navegacao__intens__menu__hamburguer__intens__links {
+    font-size: 1.2em;
+  }
+}/*# sourceMappingURL=seu--local.css.map */

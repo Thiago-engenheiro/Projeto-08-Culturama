@@ -1,5 +1,12 @@
 .continer__seta {
 
     transform: rotate(180deg);
+    margin: 0px 5px 5px 5px;
+
+}
+
+.checkbox__botao:checked + .cabecalho__navegacao__intens__icones .continer__seta {
+    
+    transform: rotate(360deg);
 
 }
