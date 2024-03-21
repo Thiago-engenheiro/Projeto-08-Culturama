@@ -9,7 +9,7 @@
   display: none;
   position: fixed;
   background-color: #dadada;
-  top: 17%;
+  top: 150px;
   z-index: 1000;
   overflow-y: auto;
   max-height: 30vh;
@@ -39,7 +39,7 @@
 
 @media (min-width: 720px) {
   .cabecalho__navegacao__intens__menu__hamburguer {
-    top: 12%;
+    top: 100px;
   }
   .cabecalho__navegacao__intens__menu__hamburguer .cabecalho__navegacao__intens__menu__hamburguer__intens {
     padding: 2em;
@@ -73,6 +73,7 @@
 
 .cabecalho__navegacao {
   display: flex;
+  align-items: center;
 }
 
 .cabecalho__navegacao__intens {
