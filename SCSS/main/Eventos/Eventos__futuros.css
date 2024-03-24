@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&=family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+.proximos__eventos__titulo {
+  font-family: "Fjalla One", sans-serif;
+  color: #000000;
+  font-size: 1.25em;
+  font-weight: 400;
+  margin: 20px 0px 20px 0px;
+  text-transform: uppercase;
+}
+
+.proximos__eventos__intens {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.proximos__eventos__intens .proximos__eventos__intens__card {
+  background-color: #D9D9D9;
+}
+.proximos__eventos__intens .proximos__eventos__intens__card .proximos__eventos__intens__card__imagem {
+  width: 100%;
+}
+.proximos__eventos__intens .proximos__eventos__intens__card .proximos__eventos__intens__card__divisao {
+  padding: 0.5em 2em 2em 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.proximos__eventos__intens .proximos__eventos__intens__card .proximos__eventos__intens__card__divisao .proximos__eventos__titulo {
+  font-family: "Fjalla One", sans-serif;
+  color: #000000;
+  font-size: 1.25em;
+  font-weight: 400;
+}
+.proximos__eventos__intens .proximos__eventos__intens__card .proximos__eventos__intens__card__divisao .proximos__eventos__texto {
+  font-family: "Work Sans", sans-serif;
+  color: #000000;
+  font-size: 1em;
+  font-weight: 400;
+}
+.proximos__eventos__intens .proximos__eventos__intens__card .proximos__eventos__intens__card__divisao .proximos__eventos__intens__card__divisao__final {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.proximos__eventos__intens .proximos__eventos__intens__card .proximos__eventos__intens__card__divisao .proximos__eventos__intens__card__divisao__final .proximos__eventos__botao {
+  font-family: "Work Sans", sans-serif;
+  color: #FFFFFF;
+  font-size: 1em;
+  font-weight: 400;
+  padding: 1em 2em;
+  background-color: #000000;
+  border: none;
+}
+.proximos__eventos__intens .proximos__eventos__botao {
+  margin: auto;
+  width: 175px;
+  font-family: "Work Sans", sans-serif;
+  color: #FFFFFF;
+  font-size: 1em;
+  font-weight: 400;
+  padding: 1em 2em;
+  background-color: #000000;
+  border: none;
+}/*# sourceMappingURL=Eventos__futuros.css.map */

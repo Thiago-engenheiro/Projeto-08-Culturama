@@ -1,37 +1,119 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&=family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
-.categorias {
+.categorias__destaques {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.categorias__destaques__secao01 {
   display: flex;
   flex-direction: column;
   margin: 50px 0px 0px 0px;
 }
-.categorias .categorias__titulo {
+.categorias__destaques__secao01 .categorias__titulo {
   font-family: "Fjalla One", sans-serif;
   color: #000000;
   font-size: 1.25em;
   font-weight: 400;
   margin: 0px 0px 20px 0px;
+  text-transform: uppercase;
 }
-.categorias .categorias__botao {
+.categorias__destaques__secao01 .categorias__destaques__secao01__botoes {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+.categorias__destaques__secao01 .categorias__destaques__secao01__botoes .categorias__botao {
   font-family: "Fjalla One", sans-serif;
   color: #FFFFFF;
   font-size: 1.25em;
   font-weight: 400;
   text-align: center;
-  padding: 1.5em 2em 1.5em 2em;
-  margin: 10px;
+  padding: 1em 2em 1em 2em;
+  margin: 0px 0px 10px 0px;
   border: none;
   text-transform: uppercase;
 }
-.categorias .continer__categorias__botao__amarelo {
+.categorias__destaques__secao01 .categorias__destaques__secao01__botoes .continer__categorias__botao__amarelo {
   background-color: #FFC756;
 }
-.categorias .continer__categorias__botao__laranja {
+.categorias__destaques__secao01 .categorias__destaques__secao01__botoes .continer__categorias__botao__laranja {
   background-color: #F66139;
 }
-.categorias .continer__categorias__botao__azul {
+.categorias__destaques__secao01 .categorias__destaques__secao01__botoes .continer__categorias__botao__azul {
   background-color: #7F8FFE;
 }
-.categorias .continer__categorias__botao__verde {
+.categorias__destaques__secao01 .categorias__destaques__secao01__botoes .continer__categorias__botao__verde {
   background-color: #56B78C;
+}
+
+.categorias__destaques__secao02 .categorias__destaques__secao02__div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0px 40px 0px;
+}
+.categorias__destaques__secao02 .categorias__destaques__secao02__div .categorias__destaques__titulo {
+  font-family: "Fjalla One", sans-serif;
+  color: #000000;
+  font-size: 1.25em;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.categorias__destaques__secao02 .categorias__destaques__secao02__div .linha-decorativa {
+  border-top: 2px solid black;
+  width: 50%;
+}
+.categorias__destaques__secao02 .categorias__destaques__secao02__div .setas .seta-esquerda {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  margin: 0px 10px 0px 0px;
+}
+.categorias__destaques__secao02 .categorias__destaques__secao02__div .setas .seta-direita {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.categorias__destaques__secao02 .categorias__imagem {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@media (min-width: 720px) {
+  .categorias__destaques__secao01 .categorias__destaques__secao01__botoes {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+  }
+  .categorias__destaques__secao01 .categorias__destaques__secao01__botoes .categorias__botao {
+    flex-grow: 1;
+    flex-basis: calc(50% - 10px); /* 50% do contêiner menos margem */
+    max-width: calc(50% - 10px); /* 50% do contêiner menos margem */
+    box-sizing: border-box;
+  }
+  .categorias__destaques__secao02 .categorias__destaques__secao02__div .linha-decorativa {
+    width: 80%;
+  }
+}
+@media (min-width: 1440px) {
+  .categorias__destaques {
+    flex-direction: row;
+    align-items: end;
+  }
+  .categorias__destaques .categorias__destaques__secao01 {
+    width: 50%;
+  }
+  .categorias__destaques .categorias__destaques__secao02 {
+    width: 50%;
+  }
 }/*# sourceMappingURL=categorias.css.map */

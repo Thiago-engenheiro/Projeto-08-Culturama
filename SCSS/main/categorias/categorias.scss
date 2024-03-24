@@ -1,7 +1,17 @@
 @use '../../abstrato/variavel.scss';
 @use '../../abstrato/mixins.scss';
 
-.categorias {
+
+.categorias__destaques {
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+
+.categorias__destaques__secao01 {
 
     display: flex;
     flex-direction: column;
@@ -11,42 +21,170 @@
 
         @include mixins.fonte---tipo-cor-tamanho-peso(variavel.$texto-01, variavel.$cor-elemento-ou-texto-01, 1.25em , 400);
         margin: 0px 0px 20px 0px;
-
-    }
-
-    .categorias__botao {
-
-        @include mixins.fonte---tipo-cor-tamanho-peso(variavel.$texto-01, variavel.$cor-elemento-ou-texto-02, 1.25em , 400);
-        text-align: center;
-        padding: 1.5em 2em 1.5em 2em;
-        margin: 10px;
-        border: none;
         text-transform: uppercase;
 
     }
 
-    .continer__categorias__botao__amarelo {
+    .categorias__destaques__secao01__botoes {
 
-        background-color: variavel.$cor-elemento-botao-01;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
 
-    }
+        .categorias__botao {
 
-    .continer__categorias__botao__laranja {
+            @include mixins.fonte---tipo-cor-tamanho-peso(variavel.$texto-01, variavel.$cor-elemento-ou-texto-02, 1.25em , 400);
+            text-align: center;
+            padding: 1em 2em 1em 2em;
+            margin: 0px 0px 10px 0px;
+            border: none;
+            text-transform: uppercase;
 
-        background-color: variavel.$cor-elemento-botao-02;
+        }
 
-    }
+        .continer__categorias__botao__amarelo {
 
-    .continer__categorias__botao__azul {
+            background-color: variavel.$cor-elemento-botao-01;
 
-        background-color: variavel.$cor-elemento-botao-03;
+        }
 
-    }
+        .continer__categorias__botao__laranja {
 
-    .continer__categorias__botao__verde {
+            background-color: variavel.$cor-elemento-botao-02;
 
-        background-color: variavel.$cor-elemento-botao-04;
+        }
+
+        .continer__categorias__botao__azul {
+
+            background-color: variavel.$cor-elemento-botao-03;
+
+        }
+
+        .continer__categorias__botao__verde {
+
+            background-color: variavel.$cor-elemento-botao-04;
+
+        }
 
     }
 
 }
+
+.categorias__destaques__secao02 {
+
+    .categorias__destaques__secao02__div {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px 0px 40px 0px;
+
+        .categorias__destaques__titulo {
+
+            @include mixins.fonte---tipo-cor-tamanho-peso(variavel.$texto-01, variavel.$cor-elemento-ou-texto-01, 1.25em , 400);
+            text-transform: uppercase;
+           
+        }
+
+        .linha-decorativa {
+
+            border-top: 2px solid black;
+            width: 50%;
+
+        }
+
+        .setas {
+
+            .seta-esquerda {
+
+                border: solid black;
+                border-width: 0 3px 3px 0;
+                display: inline-block;
+                padding: 3px;
+                transform: rotate(135deg);
+                -webkit-transform: rotate(135deg);
+                margin: 0px 10px 0px 0px;
+    
+            }
+    
+            .seta-direita {
+    
+                border: solid black;
+                border-width: 0 3px 3px 0;
+                display: inline-block;
+                padding: 3px;
+                transform: rotate(-45deg);
+                -webkit-transform: rotate(-45deg);
+    
+            }
+            
+
+        }
+
+    }
+
+    .categorias__imagem {
+
+        max-width: 100%; 
+        max-height: 100%; 
+
+    }
+    
+}
+
+@media (min-width: 720px) {
+
+    .categorias__destaques__secao01 {
+
+        .categorias__destaques__secao01__botoes {
+
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            gap: 20px;
+
+            .categorias__botao {
+
+                flex-grow: 1;
+                flex-basis: calc(50% - 10px); /* 50% do contêiner menos margem */
+                max-width: calc(50% - 10px); /* 50% do contêiner menos margem */
+                box-sizing: border-box; 
+    
+            }
+
+        }
+      
+    }
+
+    .categorias__destaques__secao02  .categorias__destaques__secao02__div .linha-decorativa {
+
+        width: 80%;
+
+    }
+
+}
+
+@media (min-width: 1440px) {
+
+
+    .categorias__destaques {
+
+        flex-direction: row;
+        align-items: end;
+        
+        .categorias__destaques__secao01 {
+
+            width: 50%;
+    
+        }
+    
+        .categorias__destaques__secao02 {
+    
+            width: 50%;
+        
+        }
+     
+    }
+
+}
+

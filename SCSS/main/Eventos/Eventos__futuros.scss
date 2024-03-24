@@ -1,0 +1,79 @@
+@use '../../abstrato/variavel.scss';
+@use '../../abstrato/mixins.scss';
+
+.proximos__eventos__titulo {
+
+        @include mixins.fonte---tipo-cor-tamanho-peso(variavel.$texto-01, variavel.$cor-elemento-ou-texto-01, 1.25em , 400);
+        margin: 20px 0px 20px 0px;
+        text-transform: uppercase;
+
+}
+
+.proximos__eventos__intens {
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .proximos__eventos__intens__card {
+
+        background-color: variavel.$cor-elemento-04;
+    
+        .proximos__eventos__intens__card__imagem {
+    
+            width: 100%;
+        
+        }
+    
+        .proximos__eventos__intens__card__divisao {
+    
+            padding: 0.5em 2em 2em 2em;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+    
+            .proximos__eventos__titulo {
+    
+                @include mixins.fonte---tipo-cor-tamanho-peso(variavel.$texto-01, variavel.$cor-elemento-ou-texto-01, 1.25em , 400);
+    
+            }
+    
+            .proximos__eventos__texto {
+    
+                @include mixins.fonte---tipo-cor-tamanho-peso(variavel.$texto-02, variavel.$cor-elemento-ou-texto-01, 1em , 400);
+    
+            }
+    
+            .proximos__eventos__intens__card__divisao__final {
+    
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+    
+                .proximos__eventos__botao {
+    
+                    @include mixins.fonte---tipo-cor-tamanho-peso(variavel.$texto-02, variavel.$cor-elemento-ou-texto-02, 1em , 400);
+                    padding: 1em 2em;
+                    background-color: variavel.$cor-elemento-ou-texto-01;
+                    border: none;
+        
+                }
+    
+            }
+    
+        }
+    
+    }
+
+    .proximos__eventos__botao {
+
+        margin: auto;
+        width: 175px;
+        @include mixins.fonte---tipo-cor-tamanho-peso(variavel.$texto-02, variavel.$cor-elemento-ou-texto-02, 1em , 400);
+        padding: 1em 2em;
+        background-color: variavel.$cor-elemento-ou-texto-01;
+        border: none;
+
+    } 
+
+}  
