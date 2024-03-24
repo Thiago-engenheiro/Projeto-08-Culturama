@@ -24,12 +24,12 @@
   color: #FFFFFF;
 }
 .cabecalho__navegacao__intens__menu__hamburguer .cabecalho__navegacao__intens__menu__hamburguer__intens .cabecalho__navegacao__intens__menu__hamburguer__intens__links {
+  font-family: "Fjalla One", sans-serif;
+  color: #000000;
+  font-size: 0.9em;
+  font-weight: 400;
   text-decoration: none;
   text-transform: uppercase;
-  color: #000000;
-  font-family: "Fjalla One", sans-serif;
-  font-weight: 400;
-  font-size: 0.9em;
 }
 
 .checkbox__botao:checked ~ .cabecalho__navegacao__intens__menu__hamburguer {

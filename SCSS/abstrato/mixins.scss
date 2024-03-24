@@ -1,0 +1,9 @@
+@mixin fonte---tipo-cor-tamanho-peso ($tipo, $cor, $tamanho, $peso) {
+
+    font-family: $tipo;
+    color: $cor;
+    font-size: $tamanho;
+    font-weight: $peso;
+
+}
+    

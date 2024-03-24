@@ -1,0 +1,52 @@
+@use '../../abstrato/variavel.scss';
+@use '../../abstrato/mixins.scss';
+
+.categorias {
+
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0px 0px 0px;
+
+    .categorias__titulo {
+
+        @include mixins.fonte---tipo-cor-tamanho-peso(variavel.$texto-01, variavel.$cor-elemento-ou-texto-01, 1.25em , 400);
+        margin: 0px 0px 20px 0px;
+
+    }
+
+    .categorias__botao {
+
+        @include mixins.fonte---tipo-cor-tamanho-peso(variavel.$texto-01, variavel.$cor-elemento-ou-texto-02, 1.25em , 400);
+        text-align: center;
+        padding: 1.5em 2em 1.5em 2em;
+        margin: 10px;
+        border: none;
+        text-transform: uppercase;
+
+    }
+
+    .continer__categorias__botao__amarelo {
+
+        background-color: variavel.$cor-elemento-botao-01;
+
+    }
+
+    .continer__categorias__botao__laranja {
+
+        background-color: variavel.$cor-elemento-botao-02;
+
+    }
+
+    .continer__categorias__botao__azul {
+
+        background-color: variavel.$cor-elemento-botao-03;
+
+    }
+
+    .continer__categorias__botao__verde {
+
+        background-color: variavel.$cor-elemento-botao-04;
+
+    }
+
+}

@@ -25,12 +25,12 @@
   color: #FFFFFF;
 }
 .cabecalho__navegacao__intens__menu__hamburguer .cabecalho__navegacao__intens__menu__hamburguer__intens .cabecalho__navegacao__intens__menu__hamburguer__intens__links {
+  font-family: "Fjalla One", sans-serif;
+  color: #000000;
+  font-size: 0.9em;
+  font-weight: 400;
   text-decoration: none;
   text-transform: uppercase;
-  color: #000000;
-  font-family: "Fjalla One", sans-serif;
-  font-weight: 400;
-  font-size: 0.9em;
 }
 
 .checkbox__botao:checked ~ .cabecalho__navegacao__intens__menu__hamburguer {
@@ -73,16 +73,16 @@
 
 .cabecalho__navegacao {
   display: flex;
-  align-items: center;
+  align-items: end;
 }
 
 .cabecalho__navegacao__intens {
-  color: #FFFFFF;
-  text-decoration: none;
   font-family: "Fjalla One", sans-serif;
-  font-weight: 400;
+  color: #FFFFFF;
   font-size: 1em;
-  margin: 0 10px;
+  font-weight: 400;
+  text-decoration: none;
+  margin: 0px 10px;
 }
 
 .cabecalho__navegacao__intens:hover {
@@ -91,6 +91,7 @@
 
 .cabecalho__navegacao__intens__icones {
   margin: 0 5px;
+  padding: 0px 0px 0px 0px;
 }
 
 .cabecalho__caixa__de__pesquisa {
@@ -104,18 +105,26 @@
 
 .cabecalho__caixa__de__pesquisa::-moz-placeholder {
   font-family: "Work Sans", sans-serif;
+  color: #FFFFFF;
+  font-size: 1em;
+  font-weight: 400;
+  font-family: "Work Sans", sans-serif;
   font-weight: 400;
   font-size: 1em;
-  background: url("../Imagens/Imagens__codigo/Ícone__busca.png") no-repeat;
+  background: url("../Imagens/Imagens__codigo/header/Ícone__busca.png") no-repeat;
   background-position: 99% 0%;
   height: 3em;
 }
 
 .cabecalho__caixa__de__pesquisa::placeholder {
   font-family: "Work Sans", sans-serif;
+  color: #FFFFFF;
+  font-size: 1em;
+  font-weight: 400;
+  font-family: "Work Sans", sans-serif;
   font-weight: 400;
   font-size: 1em;
-  background: url("../Imagens/Imagens__codigo/Ícone__busca.png") no-repeat;
+  background: url("../Imagens/Imagens__codigo/header/Ícone__busca.png") no-repeat;
   background-position: 99% 0%;
   height: 3em;
 }

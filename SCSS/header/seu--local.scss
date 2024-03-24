@@ -1,4 +1,5 @@
 @use '../abstrato/variavel.scss';
+@use '../abstrato/mixins.scss';
 
 .checkbox__botao  {
 
@@ -32,12 +33,9 @@
 
         .cabecalho__navegacao__intens__menu__hamburguer__intens__links {
        
+            @include mixins.fonte---tipo-cor-tamanho-peso(variavel.$texto-01, variavel.$cor-elemento-ou-texto-01, 0.9em , 400);
             text-decoration: none;
             text-transform: uppercase;
-            color: variavel.$cor-elemento-ou-texto-01;
-            font-family: variavel.$texto-01;
-            font-weight: 400;
-            font-size: 0.9em;
            
         }
 

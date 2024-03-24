@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&=family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+.categorias {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0px 0px 0px;
+}
+.categorias .categorias__titulo {
+  font-family: "Fjalla One", sans-serif;
+  color: #000000;
+  font-size: 1.25em;
+  font-weight: 400;
+  margin: 0px 0px 20px 0px;
+}
+.categorias .categorias__botao {
+  font-family: "Fjalla One", sans-serif;
+  color: #FFFFFF;
+  font-size: 1.25em;
+  font-weight: 400;
+  text-align: center;
+  padding: 1.5em 2em 1.5em 2em;
+  margin: 10px;
+  border: none;
+  text-transform: uppercase;
+}
+.categorias .continer__categorias__botao__amarelo {
+  background-color: #FFC756;
+}
+.categorias .continer__categorias__botao__laranja {
+  background-color: #F66139;
+}
+.categorias .continer__categorias__botao__azul {
+  background-color: #7F8FFE;
+}
+.categorias .continer__categorias__botao__verde {
+  background-color: #56B78C;
+}/*# sourceMappingURL=categorias.css.map */

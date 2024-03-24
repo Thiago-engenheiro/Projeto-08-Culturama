@@ -1,7 +1,10 @@
+@use './abstrato/root.scss';
 @use './abstrato/variavel.scss';
 @use './header/cabecalho.scss';
 @use './continer/continer.scss';
 @use './header/seu--local.scss';
+@use './main/banner/banner.scss';
+@use './main/categorias/categorias.scss';
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126

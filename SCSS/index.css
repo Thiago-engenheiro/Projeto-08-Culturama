@@ -1,6 +1,11 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&=family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+.conteudo__principal {
+  margin: 0 auto;
+  width: 90%;
+}
+
 .checkbox__botao {
   display: none;
 }
@@ -25,12 +30,12 @@
   color: #FFFFFF;
 }
 .cabecalho__navegacao__intens__menu__hamburguer .cabecalho__navegacao__intens__menu__hamburguer__intens .cabecalho__navegacao__intens__menu__hamburguer__intens__links {
+  font-family: "Fjalla One", sans-serif;
+  color: #000000;
+  font-size: 0.9em;
+  font-weight: 400;
   text-decoration: none;
   text-transform: uppercase;
-  color: #000000;
-  font-family: "Fjalla One", sans-serif;
-  font-weight: 400;
-  font-size: 0.9em;
 }
 
 .checkbox__botao:checked ~ .cabecalho__navegacao__intens__menu__hamburguer {
@@ -73,16 +78,16 @@
 
 .cabecalho__navegacao {
   display: flex;
-  align-items: center;
+  align-items: end;
 }
 
 .cabecalho__navegacao__intens {
-  color: #FFFFFF;
-  text-decoration: none;
   font-family: "Fjalla One", sans-serif;
-  font-weight: 400;
+  color: #FFFFFF;
   font-size: 1em;
-  margin: 0 10px;
+  font-weight: 400;
+  text-decoration: none;
+  margin: 0px 10px;
 }
 
 .cabecalho__navegacao__intens:hover {
@@ -91,6 +96,7 @@
 
 .cabecalho__navegacao__intens__icones {
   margin: 0 5px;
+  padding: 0px 0px 0px 0px;
 }
 
 .cabecalho__caixa__de__pesquisa {
@@ -104,18 +110,26 @@
 
 .cabecalho__caixa__de__pesquisa::-moz-placeholder {
   font-family: "Work Sans", sans-serif;
+  color: #FFFFFF;
+  font-size: 1em;
+  font-weight: 400;
+  font-family: "Work Sans", sans-serif;
   font-weight: 400;
   font-size: 1em;
-  background: url("../Imagens/Imagens__codigo/Ícone__busca.png") no-repeat;
+  background: url("../Imagens/Imagens__codigo/header/Ícone__busca.png") no-repeat;
   background-position: 99% 0%;
   height: 3em;
 }
 
 .cabecalho__caixa__de__pesquisa::placeholder {
   font-family: "Work Sans", sans-serif;
+  color: #FFFFFF;
+  font-size: 1em;
+  font-weight: 400;
+  font-family: "Work Sans", sans-serif;
   font-weight: 400;
   font-size: 1em;
-  background: url("../Imagens/Imagens__codigo/Ícone__busca.png") no-repeat;
+  background: url("../Imagens/Imagens__codigo/header/Ícone__busca.png") no-repeat;
   background-position: 99% 0%;
   height: 3em;
 }
@@ -168,6 +182,99 @@ input.cabecalho__caixa__de__pesquisa:focus {
 
 .checkbox__botao:checked + .cabecalho__navegacao__intens__icones .continer__seta {
   transform: rotate(360deg);
+}
+
+.banner {
+  margin: 250px 0px 0px 0px;
+  display: grid;
+  grid-gap: 15px;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: auto auto;
+}
+
+.banner__imagem.continer-banner__imagem-01 {
+  width: 100%;
+  height: 100%;
+  grid-area: 1/1/2/3;
+}
+
+.banner__imagem.continer-banner__imagem-02 {
+  width: 100%;
+  height: 100%;
+  grid-area: 2/1/3/2;
+}
+
+.banner__imagem.continer-banner__imagem-03 {
+  width: 100%;
+  height: 100%;
+  grid-area: 3/1/4/2;
+}
+
+.banner__imagem.continer-banner__imagem-04 {
+  width: 100%;
+  height: 100%;
+  grid-area: 2/2/4/3;
+}
+
+@media (min-width: 720px) {
+  .banner {
+    margin: 240px 0px 0px 0px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-gap: 20px;
+  }
+  .banner__imagem.continer-banner__imagem-01 {
+    grid-area: 1/1/3/2;
+  }
+  .banner__imagem.continer-banner__imagem-02 {
+    grid-area: 1/2/2/3;
+  }
+  .banner__imagem.continer-banner__imagem-03 {
+    grid-area: 2/2/3/3;
+  }
+  .banner__imagem.continer-banner__imagem-04 {
+    grid-area: 1/3/3/4;
+  }
+}
+@media (min-width: 1440px) {
+  .banner {
+    margin: 125px 0px 0px 0px;
+  }
+}
+.categorias {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0px 0px 0px;
+}
+.categorias .categorias__titulo {
+  font-family: "Fjalla One", sans-serif;
+  color: #000000;
+  font-size: 1.25em;
+  font-weight: 400;
+  margin: 0px 0px 20px 0px;
+}
+.categorias .categorias__botao {
+  font-family: "Fjalla One", sans-serif;
+  color: #FFFFFF;
+  font-size: 1.25em;
+  font-weight: 400;
+  text-align: center;
+  padding: 1.5em 2em 1.5em 2em;
+  margin: 10px;
+  border: none;
+  text-transform: uppercase;
+}
+.categorias .continer__categorias__botao__amarelo {
+  background-color: #FFC756;
+}
+.categorias .continer__categorias__botao__laranja {
+  background-color: #F66139;
+}
+.categorias .continer__categorias__botao__azul {
+  background-color: #7F8FFE;
+}
+.categorias .continer__categorias__botao__verde {
+  background-color: #56B78C;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
